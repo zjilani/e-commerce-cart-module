@@ -1,0 +1,30 @@
+{
+  "name": "shopping_cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "aws-sdk": "^2.714.0",
+    "config": "^3.3.1",
+    "dotenv": "^8.2.0",
+    "expandenv": "^1.0.0",
+    "fastify": "^3.0.3",
+    "fastify-axios": "^1.1.2",
+    "fastify-multipart": "^2.0.3",
+    "fastify-swagger": "^3.1.2",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.24",
+    "nodemon": "^2.0.4",
+    "schema": "^0.2.1",
+    "shortid": "^2.2.15",
+    "uuid": "^8.2.0"
+  }
+}
