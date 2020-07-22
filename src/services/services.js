@@ -19,7 +19,7 @@ const updateQuantityToBuy = async (fastify,updateQuantityToBuyRequest) =>{
     return cart
 }
 const updateQuantity = async (fastify,updateQuantityRequest) =>{
-    const inventories = await fastify.axios.post('https://jilani-e-commerce-product.herokuapp.com/getInventoryInfo',{variantId:updateQuantityRequest.variantId})
+    const inventories = await fastify.axios.post('http://localhost:3001/getInventoryInfo',{variantId:updateQuantityRequest.variantId})
 
     inventories.data.data.forEach(async (variant)=>{
         await Cart.updateMany({variantId: variant.variantId},{quantity:variant.inventory})

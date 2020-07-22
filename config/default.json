@@ -1,6 +1,6 @@
 {
     "server" : {
-        "port" : 3003,
+        "port" : 3005,
         "logLevel": "info"
     },
     "maxPaginationSize":"20",
